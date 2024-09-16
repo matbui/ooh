@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('../img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3vh 4vw 2vh 4vw;
+}
+
+.modal-body h1{
+    font-family: "Josefin Sans";
+    font-size: 4.5rem;
+    font-weight: 500;
+    width: 14vw;
+}
+
+.modal-body h3{
+    font-family: "Fredoka";
+    font-size: 2.5rem;
+    width: 14vw;
+    font-weight: 100;
+    text-align: center;
+}
+
+.bottom-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-modal h4{
+    background-color: #00000024;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    width: 10vw;
+    padding: 1vh 40px 1vh 40px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+
+.signup-form{
+    background-color: #00000060;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.400);
+    padding: 30px;
+    padding: 7vh 4vw 17vh 4vw;
+    width: 15vw;
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Josefin Sans";
+    font-size: 40px;
+}
+
+.signup-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-family: "Fredoka"
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    height: 2vh;
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid #cccccc00;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.315);
+    border-radius: 5px;
+    margin-top: 2vh;
+    color: white;
+}
+
+input::placeholder {
+    color: #ffffff; 
+    font-size: 14px; 
+    font-family: "Fredoka"
+}
+
+.signup-form input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 2vh;
+}
+
+
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2BAAE099;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2vh;
+    font-family: "Fredoka"
+}
+
+.signup-form button:hover {
+    background-color: #fbfcfb;
+    color: #2BAAE099;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+.password-container button {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 15px;
+}
+
+.password-container button i {
+    font-size: 18px;
+    color: #888;
+}
+.password-container button:hover{
+    background: none;
+}

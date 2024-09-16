@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@93,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="modal-body">
+            <h1>Welcome to Our Platform!</h1>
+            <h3>Join our community and enjoy exclusive features</h3>
+            <div class="bottom-modal">
+                <h4>Ready to get started? Join now!</h4>
+            </div>
+        </div>
+        <form action="index.php?action=signup" method="POST" class="signup-form">
+            <h2>Get Started</h2>
+            <input type="text" id="username" placeholder="Username" name="username" required>
+
+            <input type="email" id="email" placeholder="Email" name="email" required>
+
+            <input type="password" id="password" placeholder="Password" name="password" required>
+
+            <div class="password-container">
+                <input type="password" id="confirm_password" placeholder="Confirm Password" name="confirm_password" required>
+                <button type="button" id="toggleConfirmPassword">
+                    <i id="eyeIconConfirm" class="fas fa-eye"></i>
+                </button>
+            </div>
+            <p id="error-message" style="color: rgb(247, 247, 247); display: none;">Las contraseñas no coinciden.</p>
+
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required> I have read and agree to the Terms and Conditions.
+            </label>
+
+            <button type="submit" name="signup">Sign Up</button>
+        </form>
+    </div>
+    <script src="../public/js/scripts.js"></script>
+</body>
+</html>
