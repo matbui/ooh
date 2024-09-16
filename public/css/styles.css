@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
 .container {
@@ -145,3 +146,115 @@ input::placeholder {
 .password-container button:hover{
     background: none;
 }
+
+.user-list {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-list ul {
+    padding: 0;
+}
+
+.user-list li {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-list li:hover {
+    background-color: #d0d0d0; 
+    cursor: pointer;
+}
+
+.user-list li span {
+    font-weight: bold;
+}
+
+.user-list li small {
+    color: #666;
+    font-size: 14px;
+}
+
+.user-title{
+    text-decoration: none;
+    margin-top: 5vh;
+    color: white;
+}
+
+.user-title:hover{
+    color: rgb(233, 122, 122);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .modal-body h1 {
+        font-size: 2.5rem;
+        width: auto;
+    }
+
+    .modal-body h3 {
+        font-size: 1.5rem;
+        width: auto;
+    }
+
+    .bottom-modal h4 {
+        font-size: 1.2rem;
+        width: auto;
+        padding: 1vh 20px;
+    }
+
+    .signup-form {
+        width: 80vw;
+        padding: 5vh 4vw;
+    }
+
+    .signup-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .signup-form input[type="text"],
+    .signup-form input[type="email"],
+    .signup-form input[type="password"] {
+        height: 5vh;
+        font-size: 16px;
+    }
+
+    .signup-form button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .user-list {
+        width: 90vw;
+    }
+
+    .user-list li {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .password-container button i {
+        font-size: 16px;
+    }
+
+    .user-title {
+        font-size: 1.5rem;
+        margin-top: 2vh;
+    }
+} 

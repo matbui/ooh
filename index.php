@@ -8,4 +8,8 @@ if ($action === 'signup') {
 } else {
     include 'public/index.html';
 }
+
+if (isset($_GET['action']) && $_GET['action'] == 'showUsers') {
+    SignupController::showUsers();
+}
 ?>

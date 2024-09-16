@@ -38,5 +38,25 @@ class SignupController {
 
         echo json_encode(['status' => 'success', 'message' => 'Usuario registrado correctamente.']);
     }
+
+    public static function showUsers() {
+        $file_path = 'src/data/users.json';
+        
+        if (file_exists($file_path)) {
+            $users = json_decode(file_get_contents($file_path), true);
+
+            if ($users && count($users) > 0) {
+                echo '<ul>';
+                foreach ($users as $user) {
+                    echo '<li>' . htmlspecialchars($user['username']) . ' (' . htmlspecialchars($user['email']) . ')</li>';
+                }
+                echo '</ul>';
+            } else {
+                echo 'No hay usuarios registrados.';
+            }
+        } else {
+            echo 'El archivo de usuarios no existe.';
+        }
+    }
 }
 ?>

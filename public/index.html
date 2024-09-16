@@ -43,6 +43,17 @@
             <button type="submit" name="signup">Sign Up</button>
         </form>
     </div>
+
+    <a  class="user-title" href="index.php?action=showUsers">Ver usuarios registrados</a>
+        
+        <!-- Mostrar la lista de usuarios aquí -->
+        <div class="user-list">
+            <?php
+            if (isset($_GET['action']) && $_GET['action'] == 'showUsers') {
+                SignupController::showUsers();
+            }
+            ?>
+        </div>
     <script src="../public/js/scripts.js"></script>
 </body>
 </html>
